@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int main()
 {
 	int a, b;
 	int res1, res2, res3, res4;
