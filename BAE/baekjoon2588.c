@@ -1,15 +1,18 @@
-// (세 자리 수) × (세 자리 수)의 곱셈과정을 표현하는 코드
-
 #include <stdio.h>
 
 int main(void)
 {
 	int a, b;
+	int res1, res2, res3, res4;
 
-	scanf("%d", &a);
-	scanf("%d", &b);
-	printf("%d\n%d\n%d\n%d", a * (b % 10), a * ((b / 10) % 10), a * (b / 100), a * b);
+	scanf("%d %d", &a, &b);
+	
+	res1 = a * (b % 10);
+	res2 = a * ((b / 10) % 10);
+	res3 = a * (b / 100);
+	res4 = a * b;
+	
+	printf("%d\n%d\n%d\n%d", res1, res2, res3, res4);
 
 	return 0;
-
 }
